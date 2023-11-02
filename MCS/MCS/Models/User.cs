@@ -31,7 +31,7 @@ namespace MCS.Models
 
         [Required]
         [Column("designation")]
-        public string Designation { get; set; } = string.Empty;
+        public string? Designation { get; set; } = string.Empty;
     }
 
     public class UserLogin

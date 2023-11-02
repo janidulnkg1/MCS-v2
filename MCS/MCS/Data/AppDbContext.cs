@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage;
+using Serilog;
 
 namespace MCS.Data
 {
@@ -15,18 +16,24 @@ namespace MCS.Data
                 var databaseCreator = Database.GetService<IDatabaseCreator>() as RelationalDatabaseCreator;
                 if (databaseCreator != null)
                 {
-                    //create database if not available
+                    
                     if (!databaseCreator.CanConnect()) databaseCreator.Create();
+                    Log.Warning("Database does not exist! New Database has been Created!");
 
-
-                    //Create Tables if no tables exist
+                    
                     if (!databaseCreator.HasTables()) databaseCreator.CreateTables();
+                    Log.Warning("Table does not exist! New Table has been Created!");
                 }
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                Log.Error(ex.Message);
             }
+        }
+
+        public Task SaveChangesAsync()
+        {
+            throw new NotImplementedException();
         }
     }
 }
