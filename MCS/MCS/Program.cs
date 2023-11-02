@@ -4,6 +4,9 @@ using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.Filters;
 using Serilog;
 using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -39,6 +42,29 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 {
     options.UseMySql(MySqlConString, ServerVersion.AutoDetect(MySqlConString));
 });
+
+// Add authentication
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        string? jwtKey = builder.Configuration.GetSection("JWT:Key").Value;
+
+        if (jwtKey != null)
+        {
+            options.TokenValidationParameters = new TokenValidationParameters
+            {
+                ValidateIssuerSigningKey = true,
+                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtKey)),
+                ValidateIssuer = false,
+                ValidateAudience = false
+            };
+        }
+        else
+        {
+            Log.Error("JWT:Key is missing or null. Please configure it properly.");
+        }
+    });
+
 
 //added logging
 Log.Logger = new LoggerConfiguration()
