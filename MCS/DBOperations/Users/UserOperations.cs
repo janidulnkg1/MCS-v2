@@ -1,0 +1,14 @@
+﻿using Org.BouncyCastle.Bcpg;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DBOperations.Users
+{
+    public class UserOperations: IUserOperations
+    {
+
+    }
+}
