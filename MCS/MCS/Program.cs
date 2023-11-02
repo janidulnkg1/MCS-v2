@@ -7,6 +7,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using static System.Net.Mime.MediaTypeNames;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -36,34 +37,53 @@ builder.Services.AddSwaggerGen(options =>
     options.OperationFilter<SecurityRequirementsOperationFilter>();
 });
 
-//dbContext Dependency Injection
-string? MySqlConString = _configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<AppDbContext>(options =>
-{
-    options.UseMySql(MySqlConString, ServerVersion.AutoDetect(MySqlConString));
-});
+string? encodedMySqlConString = _configuration.GetConnectionString("DefaultConnection");
 
-// Add authentication
+if (encodedMySqlConString != null)
+{
+    var encodedConString = System.Text.Encoding.UTF8.GetBytes(encodedMySqlConString);
+    string MySqlConString = System.Convert.ToBase64String(encodedConString);
+
+    builder.Services.AddDbContext<AppDbContext>(options =>
+    {
+        options.UseMySql(MySqlConString, ServerVersion.AutoDetect(MySqlConString));
+    });
+}
+else
+{
+    throw new ArgumentNullException("DefaultConnection", "Connection string is null or empty.");
+}
+
+
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
-        string? jwtKey = builder.Configuration.GetSection("JWT:Key").Value;
+        string? encodedjwtKey = _configuration.GetSection("JWT:Key").Value;
 
-        if (jwtKey != null)
+        if (encodedjwtKey != null)
         {
-            options.TokenValidationParameters = new TokenValidationParameters
+            try
             {
-                ValidateIssuerSigningKey = true,
-                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtKey)),
-                ValidateIssuer = false,
-                ValidateAudience = false
-            };
+                string JWTKey = Encoding.UTF8.GetString(Convert.FromBase64String(encodedjwtKey));
+                options.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(JWTKey)),
+                    ValidateIssuer = false,
+                    ValidateAudience = false
+                };
+            }
+            catch (Exception ex)
+            {
+                Log.Error("Invalid JWT Key configuration: " + ex.Message);
+            }
         }
         else
         {
             Log.Error("JWT:Key is missing or null. Please configure it properly.");
         }
     });
+
 
 
 //added logging
