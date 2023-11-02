@@ -12,12 +12,12 @@ namespace MCS.Models
 
         [Column("username")]
         [Required]
-        public string Username { get; set; } = string.Empty;
+        public string? Username { get; set; } = string.Empty;
 
         [EmailAddress]
         [Required]
         [Column("email")]
-        public string Email { get; set; } = string.Empty;
+        public string? Email { get; set; } = string.Empty;
 
         [DataType(DataType.Password)]
         [Required]
