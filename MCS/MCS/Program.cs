@@ -35,20 +35,22 @@ builder.Services.AddSwaggerGen(options =>
 
 string? encodedMySqlConString = _configuration.GetConnectionString("DefaultConnection");
 
-if (encodedMySqlConString != null)
+if (!string.IsNullOrEmpty(encodedMySqlConString))
 {
-    var encodedConString = System.Text.Encoding.UTF8.GetBytes(encodedMySqlConString);
-    string MySqlConString = System.Convert.ToBase64String(encodedConString);
+    string MySqlConString = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String(encodedMySqlConString));
+
+    var serverVersion = new MySqlServerVersion(new Version(5, 7, 42)); 
 
     builder.Services.AddDbContext<AppDbContext>(options =>
     {
-        options.UseMySql(MySqlConString, ServerVersion.AutoDetect(MySqlConString));
+        options.UseMySql(MySqlConString, serverVersion); 
     });
 }
 else
 {
     throw new ArgumentNullException("DefaultConnection", "Connection string is null or empty.");
 }
+
 
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
