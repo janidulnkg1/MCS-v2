@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using static System.Net.Mime.MediaTypeNames;
+using MCS.Services.UserServices;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -51,7 +52,7 @@ else
     throw new ArgumentNullException("DefaultConnection", "Connection string is null or empty.");
 }
 
-
+builder.Services.AddScoped<IUserService, UserService>();
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>

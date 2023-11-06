@@ -4,9 +4,9 @@ namespace MCS.Services.UserServices
 {
     public class UserService : IUserService
     {
-        private readonly IHttpContextAccessor? _contextAccessor;
+        private readonly IHttpContextAccessor _contextAccessor;
 
-        public UserService(IHttpContextAccessor? contextAccessor)
+        public UserService(IHttpContextAccessor contextAccessor)
         {
             _contextAccessor = contextAccessor;
         }
@@ -14,7 +14,7 @@ namespace MCS.Services.UserServices
         public string GetMyDesignation()
         {
             var result = string.Empty;
-            var httpContext = _contextAccessor?.HttpContext;
+            var httpContext = _contextAccessor.HttpContext;
 
             if (httpContext != null)
             {
