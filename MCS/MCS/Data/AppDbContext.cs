@@ -6,7 +6,7 @@ using Serilog;
 
 namespace MCS.Data
 {
-    public class AppDbContext:DbContext
+    public class AppDbContext : DbContext
     {
         public DbSet<User> Users { get; set; }
         public AppDbContext(DbContextOptions<AppDbContext> options):base(options) 
@@ -31,5 +31,6 @@ namespace MCS.Data
             }
         }
 
+       
     }
 }

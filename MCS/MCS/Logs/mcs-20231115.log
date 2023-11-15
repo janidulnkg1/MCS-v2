@@ -94,3 +94,9 @@ System.NotImplementedException: The method or operation is not implemented.
 2023-11-15 12:10:01.235 +05:30 [WRN] Database does not exist! New Database has been Created!
 2023-11-15 12:10:01.239 +05:30 [WRN] Table does not exist! New Table has been Created!
 2023-11-15 12:10:01.360 +05:30 [INF] User: admin1 login Successful!
+2023-11-15 12:24:54.433 +05:30 [WRN] Database does not exist! New Database has been Created!
+2023-11-15 12:24:54.494 +05:30 [WRN] Table does not exist! New Table has been Created!
+2023-11-15 12:24:54.497 +05:30 [INF] Retrieved all available users!
+2023-11-15 12:26:44.723 +05:30 [WRN] Database does not exist! New Database has been Created!
+2023-11-15 12:26:44.780 +05:30 [WRN] Table does not exist! New Table has been Created!
+2023-11-15 12:26:45.172 +05:30 [INF] User: admin1 login Successful!

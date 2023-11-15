@@ -1,14 +1,12 @@
 using MCS.Data;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.OpenApi.Models;
-using Swashbuckle.AspNetCore.Filters;
-using Serilog;
-using Microsoft.Extensions.Logging;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.IdentityModel.Tokens;
-using System.Text;
-using static System.Net.Mime.MediaTypeNames;
 using MCS.Services.UserServices;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
+using Serilog;
+using Swashbuckle.AspNetCore.Filters;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
