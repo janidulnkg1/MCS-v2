@@ -29,28 +29,6 @@ namespace MCS.Controllers
             _userService = userService;
         }
 
-        [HttpGet("/getme")]
-        [Authorize(Roles = "ADMIN,USER")]
-        public ActionResult<string> GetMe()
-        {
-            try
-            {
-                var userdetails = new
-                {
-                    
-                    Designation = _userService.GetMyDesignation()
-                };
-                Log.Information($" {userdetails.Designation} logged in!");
-                return Ok(userdetails);
-            }
-            catch (Exception ex)
-            {
-
-                Log.Error(ex, "An error occurred while checking for logged user!");
-                return StatusCode(StatusCodes.Status500InternalServerError, "An error occurred while processing your request.");
-            }
-        }
-
         [HttpPost("/register")]
         //[Authorize(Roles = "ADMIN")]
         public async Task<ActionResult<User>> Register(UserRegister newuser)
