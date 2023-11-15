@@ -22,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://192.169.0.212/qtxnuget/nuget": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://resolvemyaccounts.com/qtxnuget/nuget": {}
         },
@@ -77,6 +76,14 @@
             "Microsoft.Extensions.Configuration.Json": {
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.2.0, )"
+            },
+            "MySql.Data.EntityFramework": {
+              "target": "Package",
+              "version": "[8.2.0, )"
             },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",

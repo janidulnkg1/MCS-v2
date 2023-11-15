@@ -52,6 +52,9 @@ else
     throw new ArgumentNullException("DefaultConnection", "Connection string is null or empty.");
 }
 
+builder.Services.AddHttpContextAccessor();
+
+
 builder.Services.AddScoped<IUserService, UserService>();
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)

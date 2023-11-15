@@ -1,0 +1,96 @@
+2023-11-15 09:50:22.355 +05:30 [WRN] Database does not exist! New Database has been Created!
+2023-11-15 09:50:22.479 +05:30 [WRN] Table does not exist! New Table has been Created!
+2023-11-15 09:50:22.851 +05:30 [ERR] An error occurred while registering a new user!
+System.NotImplementedException: The method or operation is not implemented.
+   at MCS.Data.AppDbContext.SaveChangesAsync() in C:\Users\Janidu Lankage\Documents\GitHub\MCS-v2\MCS\MCS\Data\AppDbContext.cs:line 36
+   at MCS.Controllers.AuthController.Register(UserRegister newuser) in C:\Users\Janidu Lankage\Documents\GitHub\MCS-v2\MCS\MCS\Controllers\AuthController.cs:line 91
+2023-11-15 09:50:55.446 +05:30 [WRN] Database does not exist! New Database has been Created!
+2023-11-15 09:50:55.475 +05:30 [WRN] Table does not exist! New Table has been Created!
+2023-11-15 09:50:55.502 +05:30 [ERR] An error occurred while registering a new user!
+System.NotImplementedException: The method or operation is not implemented.
+   at MCS.Data.AppDbContext.SaveChangesAsync() in C:\Users\Janidu Lankage\Documents\GitHub\MCS-v2\MCS\MCS\Data\AppDbContext.cs:line 36
+   at MCS.Controllers.AuthController.Register(UserRegister newuser) in C:\Users\Janidu Lankage\Documents\GitHub\MCS-v2\MCS\MCS\Controllers\AuthController.cs:line 91
+2023-11-15 09:51:00.102 +05:30 [WRN] Database does not exist! New Database has been Created!
+2023-11-15 09:51:00.104 +05:30 [WRN] Table does not exist! New Table has been Created!
+2023-11-15 09:51:00.147 +05:30 [ERR] An error occurred while registering a new user!
+System.NotImplementedException: The method or operation is not implemented.
+   at MCS.Data.AppDbContext.SaveChangesAsync() in C:\Users\Janidu Lankage\Documents\GitHub\MCS-v2\MCS\MCS\Data\AppDbContext.cs:line 36
+   at MCS.Controllers.AuthController.Register(UserRegister newuser) in C:\Users\Janidu Lankage\Documents\GitHub\MCS-v2\MCS\MCS\Controllers\AuthController.cs:line 91
+2023-11-15 09:51:00.602 +05:30 [WRN] Database does not exist! New Database has been Created!
+2023-11-15 09:51:00.605 +05:30 [WRN] Table does not exist! New Table has been Created!
+2023-11-15 09:51:00.625 +05:30 [ERR] An error occurred while registering a new user!
+System.NotImplementedException: The method or operation is not implemented.
+   at MCS.Data.AppDbContext.SaveChangesAsync() in C:\Users\Janidu Lankage\Documents\GitHub\MCS-v2\MCS\MCS\Data\AppDbContext.cs:line 36
+   at MCS.Controllers.AuthController.Register(UserRegister newuser) in C:\Users\Janidu Lankage\Documents\GitHub\MCS-v2\MCS\MCS\Controllers\AuthController.cs:line 91
+2023-11-15 09:51:00.774 +05:30 [WRN] Database does not exist! New Database has been Created!
+2023-11-15 09:51:00.778 +05:30 [WRN] Table does not exist! New Table has been Created!
+2023-11-15 09:51:00.795 +05:30 [ERR] An error occurred while registering a new user!
+System.NotImplementedException: The method or operation is not implemented.
+   at MCS.Data.AppDbContext.SaveChangesAsync() in C:\Users\Janidu Lankage\Documents\GitHub\MCS-v2\MCS\MCS\Data\AppDbContext.cs:line 36
+   at MCS.Controllers.AuthController.Register(UserRegister newuser) in C:\Users\Janidu Lankage\Documents\GitHub\MCS-v2\MCS\MCS\Controllers\AuthController.cs:line 91
+2023-11-15 09:51:00.914 +05:30 [WRN] Database does not exist! New Database has been Created!
+2023-11-15 09:51:00.918 +05:30 [WRN] Table does not exist! New Table has been Created!
+2023-11-15 09:51:00.937 +05:30 [ERR] An error occurred while registering a new user!
+System.NotImplementedException: The method or operation is not implemented.
+   at MCS.Data.AppDbContext.SaveChangesAsync() in C:\Users\Janidu Lankage\Documents\GitHub\MCS-v2\MCS\MCS\Data\AppDbContext.cs:line 36
+   at MCS.Controllers.AuthController.Register(UserRegister newuser) in C:\Users\Janidu Lankage\Documents\GitHub\MCS-v2\MCS\MCS\Controllers\AuthController.cs:line 91
+2023-11-15 09:51:01.044 +05:30 [WRN] Database does not exist! New Database has been Created!
+2023-11-15 09:51:01.047 +05:30 [WRN] Table does not exist! New Table has been Created!
+2023-11-15 09:51:01.066 +05:30 [ERR] An error occurred while registering a new user!
+System.NotImplementedException: The method or operation is not implemented.
+   at MCS.Data.AppDbContext.SaveChangesAsync() in C:\Users\Janidu Lankage\Documents\GitHub\MCS-v2\MCS\MCS\Data\AppDbContext.cs:line 36
+   at MCS.Controllers.AuthController.Register(UserRegister newuser) in C:\Users\Janidu Lankage\Documents\GitHub\MCS-v2\MCS\MCS\Controllers\AuthController.cs:line 91
+2023-11-15 09:51:01.189 +05:30 [WRN] Database does not exist! New Database has been Created!
+2023-11-15 09:51:01.192 +05:30 [WRN] Table does not exist! New Table has been Created!
+2023-11-15 09:51:01.211 +05:30 [ERR] An error occurred while registering a new user!
+System.NotImplementedException: The method or operation is not implemented.
+   at MCS.Data.AppDbContext.SaveChangesAsync() in C:\Users\Janidu Lankage\Documents\GitHub\MCS-v2\MCS\MCS\Data\AppDbContext.cs:line 36
+   at MCS.Controllers.AuthController.Register(UserRegister newuser) in C:\Users\Janidu Lankage\Documents\GitHub\MCS-v2\MCS\MCS\Controllers\AuthController.cs:line 91
+2023-11-15 09:51:01.294 +05:30 [WRN] Database does not exist! New Database has been Created!
+2023-11-15 09:51:01.296 +05:30 [WRN] Table does not exist! New Table has been Created!
+2023-11-15 09:51:01.314 +05:30 [ERR] An error occurred while registering a new user!
+System.NotImplementedException: The method or operation is not implemented.
+   at MCS.Data.AppDbContext.SaveChangesAsync() in C:\Users\Janidu Lankage\Documents\GitHub\MCS-v2\MCS\MCS\Data\AppDbContext.cs:line 36
+   at MCS.Controllers.AuthController.Register(UserRegister newuser) in C:\Users\Janidu Lankage\Documents\GitHub\MCS-v2\MCS\MCS\Controllers\AuthController.cs:line 91
+2023-11-15 09:51:01.419 +05:30 [WRN] Database does not exist! New Database has been Created!
+2023-11-15 09:51:01.422 +05:30 [WRN] Table does not exist! New Table has been Created!
+2023-11-15 09:51:01.441 +05:30 [ERR] An error occurred while registering a new user!
+System.NotImplementedException: The method or operation is not implemented.
+   at MCS.Data.AppDbContext.SaveChangesAsync() in C:\Users\Janidu Lankage\Documents\GitHub\MCS-v2\MCS\MCS\Data\AppDbContext.cs:line 36
+   at MCS.Controllers.AuthController.Register(UserRegister newuser) in C:\Users\Janidu Lankage\Documents\GitHub\MCS-v2\MCS\MCS\Controllers\AuthController.cs:line 91
+2023-11-15 09:51:01.545 +05:30 [WRN] Database does not exist! New Database has been Created!
+2023-11-15 09:51:01.548 +05:30 [WRN] Table does not exist! New Table has been Created!
+2023-11-15 09:51:01.567 +05:30 [ERR] An error occurred while registering a new user!
+System.NotImplementedException: The method or operation is not implemented.
+   at MCS.Data.AppDbContext.SaveChangesAsync() in C:\Users\Janidu Lankage\Documents\GitHub\MCS-v2\MCS\MCS\Data\AppDbContext.cs:line 36
+   at MCS.Controllers.AuthController.Register(UserRegister newuser) in C:\Users\Janidu Lankage\Documents\GitHub\MCS-v2\MCS\MCS\Controllers\AuthController.cs:line 91
+2023-11-15 09:51:01.685 +05:30 [WRN] Database does not exist! New Database has been Created!
+2023-11-15 09:51:01.688 +05:30 [WRN] Table does not exist! New Table has been Created!
+2023-11-15 09:51:01.707 +05:30 [ERR] An error occurred while registering a new user!
+System.NotImplementedException: The method or operation is not implemented.
+   at MCS.Data.AppDbContext.SaveChangesAsync() in C:\Users\Janidu Lankage\Documents\GitHub\MCS-v2\MCS\MCS\Data\AppDbContext.cs:line 36
+   at MCS.Controllers.AuthController.Register(UserRegister newuser) in C:\Users\Janidu Lankage\Documents\GitHub\MCS-v2\MCS\MCS\Controllers\AuthController.cs:line 91
+2023-11-15 09:51:01.912 +05:30 [WRN] Database does not exist! New Database has been Created!
+2023-11-15 09:51:01.916 +05:30 [WRN] Table does not exist! New Table has been Created!
+2023-11-15 09:51:01.935 +05:30 [ERR] An error occurred while registering a new user!
+System.NotImplementedException: The method or operation is not implemented.
+   at MCS.Data.AppDbContext.SaveChangesAsync() in C:\Users\Janidu Lankage\Documents\GitHub\MCS-v2\MCS\MCS\Data\AppDbContext.cs:line 36
+   at MCS.Controllers.AuthController.Register(UserRegister newuser) in C:\Users\Janidu Lankage\Documents\GitHub\MCS-v2\MCS\MCS\Controllers\AuthController.cs:line 91
+2023-11-15 10:26:41.246 +05:30 [WRN] Database does not exist! New Database has been Created!
+2023-11-15 10:26:41.300 +05:30 [WRN] Table does not exist! New Table has been Created!
+2023-11-15 10:26:41.668 +05:30 [ERR] An error occurred while registering a new user!
+System.NotImplementedException: The method or operation is not implemented.
+   at MCS.Data.AppDbContext.SaveChangesAsync() in C:\Users\Janidu Lankage\Documents\GitHub\MCS-v2\MCS\MCS\Data\AppDbContext.cs:line 36
+   at MCS.Controllers.AuthController.Register(UserRegister newuser) in C:\Users\Janidu Lankage\Documents\GitHub\MCS-v2\MCS\MCS\Controllers\AuthController.cs:line 91
+2023-11-15 12:05:55.888 +05:30 [WRN] Database does not exist! New Database has been Created!
+2023-11-15 12:05:55.941 +05:30 [WRN] Table does not exist! New Table has been Created!
+2023-11-15 12:05:56.264 +05:30 [ERR] An error occurred while registering a new user!
+System.NotImplementedException: The method or operation is not implemented.
+   at MCS.Data.AppDbContext.SaveChangesAsync() in C:\Users\Janidu Lankage\Documents\GitHub\MCS-v2\MCS\MCS\Data\AppDbContext.cs:line 36
+   at MCS.Controllers.AuthController.Register(UserRegister newuser) in C:\Users\Janidu Lankage\Documents\GitHub\MCS-v2\MCS\MCS\Controllers\AuthController.cs:line 91
+2023-11-15 12:09:43.156 +05:30 [WRN] Database does not exist! New Database has been Created!
+2023-11-15 12:09:43.209 +05:30 [WRN] Table does not exist! New Table has been Created!
+2023-11-15 12:09:43.614 +05:30 [INF] User admin1 Added Successfully!
+2023-11-15 12:10:01.235 +05:30 [WRN] Database does not exist! New Database has been Created!
+2023-11-15 12:10:01.239 +05:30 [WRN] Table does not exist! New Table has been Created!
+2023-11-15 12:10:01.360 +05:30 [INF] User: admin1 login Successful!

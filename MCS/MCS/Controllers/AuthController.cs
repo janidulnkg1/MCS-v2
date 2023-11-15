@@ -37,7 +37,7 @@ namespace MCS.Controllers
             {
                 var userdetails = new
                 {
-                    //UserName = _userService.GetMyUsername(),
+                    
                     Designation = _userService.GetMyDesignation()
                 };
                 Log.Information($" {userdetails.Designation} logged in!");
@@ -95,8 +95,9 @@ namespace MCS.Controllers
             catch (Exception ex)
             {
                 Log.Error(ex, "An error occurred while registering a new user!");
-                return StatusCode(StatusCodes.Status500InternalServerError, "An error occurred while trying to Register.");
+                return StatusCode(StatusCodes.Status500InternalServerError, $"An error occurred while trying to Register. Details: {ex.Message}");
             }
+
         }
 
         [HttpPost("/login")]
