@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "pIotOfcopmD7SrBZLZYuMcbd1dikDSuhzyhU8TIaQA83RyevxXsC7EW8pkBbrM7XurQTf036qOVrEyWUvVMG1g==",
+  "dgSpecHash": "BGdlQRHVMnQPIZC1qMAYvkdcn8jSpV7gfZ9xoDUyIgos/G4HB+dC14c6jTTslOTkcrYyyjf7W9iQbR1TIgwJTg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Janidu Lankage\\Documents\\GitHub\\MCS-v2\\MCS\\MCS\\MCS.csproj",
   "expectedPackageFiles": [
@@ -103,5 +103,12 @@
     "C:\\Users\\Janidu Lankage\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
     "C:\\Users\\Janidu Lankage\\.nuget\\packages\\zstdsharp.port\\0.7.1\\zstdsharp.port.0.7.1.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://10.23.123.29/qtxnuget/nuget'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+    }
+  ]
 }

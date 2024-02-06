@@ -13,9 +13,9 @@ namespace MCS.Controllers
     //[Authorize(Roles = "ADMIN")]
     public class UserController : ControllerBase
     {
-        private readonly AppDbContext _dbContext;
+        private readonly IAppDbContext _dbContext;
 
-        public UserController(AppDbContext dbContext)
+        public UserController(IAppDbContext dbContext)
         {
             _dbContext = dbContext;
         }

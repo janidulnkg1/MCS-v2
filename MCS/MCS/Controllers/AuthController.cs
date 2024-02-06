@@ -19,10 +19,10 @@ namespace MCS.Controllers
 
         public static User user = new User();
         private readonly IConfiguration _configuration;
-        private readonly AppDbContext _dbContext;
+        private readonly IAppDbContext _dbContext;
         private readonly IUserService _userService;
 
-        public AuthController(IConfiguration configuration, AppDbContext appDbContext, IUserService userService)
+        public AuthController(IConfiguration configuration, IAppDbContext appDbContext, IUserService userService)
         {
             _configuration = configuration;
             _dbContext = appDbContext;
