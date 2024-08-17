@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MCS-WEB-API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+29e6f2586e509dd9b99d1fcd004f0bad5d77cc6a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4fe159ede6cacb54ae24fdd6ee38859cf2b2e5af")]
 [assembly: System.Reflection.AssemblyProductAttribute("MCS-WEB-API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MCS-WEB-API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

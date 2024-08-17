@@ -5,7 +5,8 @@ namespace MCS_WEB_API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class DoctorController : ControllerBase
+    public class UserController : ControllerBase
     {
+
     }
 }

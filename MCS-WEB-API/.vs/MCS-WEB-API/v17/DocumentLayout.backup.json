@@ -1,7 +1,24 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\User\\Documents\\GitHub\\MCS-v2\\MCS-WEB-API\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7195E1CC-E4A9-489C-868E-0BC8220CD6D9}|MCS-WEB-API\\MCS-WEB-API.csproj|c:\\users\\user\\documents\\github\\mcs-v2\\mcs-web-api\\mcs-web-api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7195E1CC-E4A9-489C-868E-0BC8220CD6D9}|MCS-WEB-API\\MCS-WEB-API.csproj|solutionrelative:mcs-web-api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7195E1CC-E4A9-489C-868E-0BC8220CD6D9}|MCS-WEB-API\\MCS-WEB-API.csproj|c:\\users\\user\\documents\\github\\mcs-v2\\mcs-web-api\\mcs-web-api\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7195E1CC-E4A9-489C-868E-0BC8220CD6D9}|MCS-WEB-API\\MCS-WEB-API.csproj|solutionrelative:mcs-web-api\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7195E1CC-E4A9-489C-868E-0BC8220CD6D9}|MCS-WEB-API\\MCS-WEB-API.csproj|c:\\users\\user\\documents\\github\\mcs-v2\\mcs-web-api\\mcs-web-api\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7195E1CC-E4A9-489C-868E-0BC8220CD6D9}|MCS-WEB-API\\MCS-WEB-API.csproj|solutionrelative:mcs-web-api\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7195E1CC-E4A9-489C-868E-0BC8220CD6D9}|MCS-WEB-API\\MCS-WEB-API.csproj|c:\\users\\user\\documents\\github\\mcs-v2\\mcs-web-api\\mcs-web-api\\mcs-web-api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7195E1CC-E4A9-489C-868E-0BC8220CD6D9}|MCS-WEB-API\\MCS-WEB-API.csproj|solutionrelative:mcs-web-api\\mcs-web-api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,6 +43,58 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MCS-WEB-API.csproj",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\MCS-v2\\MCS-WEB-API\\MCS-WEB-API\\MCS-WEB-API.csproj",
+              "RelativeDocumentMoniker": "MCS-WEB-API\\MCS-WEB-API.csproj",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\MCS-v2\\MCS-WEB-API\\MCS-WEB-API\\MCS-WEB-API.csproj",
+              "RelativeToolTip": "MCS-WEB-API\\MCS-WEB-API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-17T12:20:13.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DoctorController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\MCS-v2\\MCS-WEB-API\\MCS-WEB-API\\Controllers\\DoctorController.cs",
+              "RelativeDocumentMoniker": "MCS-WEB-API\\Controllers\\DoctorController.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\MCS-v2\\MCS-WEB-API\\MCS-WEB-API\\Controllers\\DoctorController.cs",
+              "RelativeToolTip": "MCS-WEB-API\\Controllers\\DoctorController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T12:14:48.347Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppointmentController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\MCS-v2\\MCS-WEB-API\\MCS-WEB-API\\Controllers\\AppointmentController.cs",
+              "RelativeDocumentMoniker": "MCS-WEB-API\\Controllers\\AppointmentController.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\MCS-v2\\MCS-WEB-API\\MCS-WEB-API\\Controllers\\AppointmentController.cs",
+              "RelativeToolTip": "MCS-WEB-API\\Controllers\\AppointmentController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T12:14:16.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\MCS-v2\\MCS-WEB-API\\MCS-WEB-API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "MCS-WEB-API\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\MCS-v2\\MCS-WEB-API\\MCS-WEB-API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "MCS-WEB-API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T12:13:49.368Z",
+              "EditorCaption": ""
             }
           ]
         }
