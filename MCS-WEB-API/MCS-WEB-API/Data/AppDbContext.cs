@@ -6,9 +6,9 @@ using Serilog;
 
 namespace MCS_WEB_API.Data
 {
-    public class AppDbContext: DbContext
+    public class AppDbContext : DbContext
     {
-        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) 
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
             try
             {
@@ -29,12 +29,14 @@ namespace MCS_WEB_API.Data
             }
         }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            base.OnModelCreating(modelBuilder);
+        public DbSet<User> users { get; set; }
 
-            modelBuilder.Entity<User>().HasKey(r => r.UserId);
-        }
+        public DbSet<Appointment> appointments { get; set;}
+
+        public DbSet<Doctor> doctors { get; set; }
+
+
+
 
     }
 
