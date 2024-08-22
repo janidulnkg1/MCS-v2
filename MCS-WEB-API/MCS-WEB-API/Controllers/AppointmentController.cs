@@ -7,5 +7,7 @@ namespace MCS_WEB_API.Controllers
     [ApiController]
     public class AppointmentController : ControllerBase
     {
+
+
     }
 }
