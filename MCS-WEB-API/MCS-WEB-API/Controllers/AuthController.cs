@@ -30,7 +30,7 @@ namespace MCS_WEB_API.Controllers
             _userService = userService;
         }
 
-        [HttpGet("/getme")]
+        [HttpGet("/api/v1/getme")]
         [Authorize(Roles = "ADMIN,USER,DOCTOR,RECEPTIONIST")]
         public ActionResult<string> GetMe()
         {
@@ -53,7 +53,7 @@ namespace MCS_WEB_API.Controllers
             }
         }
 
-        [HttpPost("/register")]
+        [HttpPost("/api/v1/register")]
         [Authorize(Roles = "ADMIN")]
         public async Task<ActionResult> Register(UserRegister newuser)
         {
@@ -83,7 +83,7 @@ namespace MCS_WEB_API.Controllers
             }
         }
 
-        [HttpPost("/login")]
+        [HttpPost("/api/v1/login")]
         public async Task<ActionResult<User>> Login(UserLogin request)
         {
             try
@@ -124,7 +124,7 @@ namespace MCS_WEB_API.Controllers
             }
         }
 
-        [HttpPost("/logout")]
+        [HttpPost("/api/v1/logout")]
         [Authorize(Roles = "USER,ADMIN")]
         [CheckToken]
 

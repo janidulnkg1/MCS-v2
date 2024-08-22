@@ -38,7 +38,7 @@ namespace MCS_WEB_API.Controllers
             }
         }
 
-        [HttpPut("/updateUser")]
+        [HttpPut("/api/v1/updateUser")]
         public async Task<ActionResult> Update(UserRegister newuser)
         {
             try
@@ -83,7 +83,7 @@ namespace MCS_WEB_API.Controllers
         }
 
 
-        [HttpDelete("/deleteUser/{UserId:int}")]
+        [HttpDelete("/api/v1/deleteUser/{UserId:int}")]
         public async Task<ActionResult> Delete(int UserId)
         {
             try
