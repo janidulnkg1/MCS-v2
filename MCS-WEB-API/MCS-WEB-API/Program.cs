@@ -8,6 +8,7 @@ using Serilog;
 using Swashbuckle.AspNetCore.Filters;
 using System.Text;
 using MCS_WEB_API.Data;
+using MCS_WEB_API.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,6 +26,8 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 // Add services to the container.
 
+builder.Services.AddScoped<IUserService, UserService>();
+
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 
@@ -33,6 +36,7 @@ builder.Services.AddControllersWithViews().AddNewtonsoftJson(options =>
     .AddNewtonsoftJson(options => options.SerializerSettings.ContractResolver
     = new DefaultContractResolver());
 
+builder.Services.AddHttpContextAccessor();
 
 builder.Services.AddEndpointsApiExplorer();
 
