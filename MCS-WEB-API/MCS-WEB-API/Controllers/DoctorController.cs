@@ -2,7 +2,9 @@
 using MCS_WEB_API.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Serilog;
+using System.Data;
 
 namespace MCS_WEB_API.Controllers
 {
@@ -15,6 +17,26 @@ namespace MCS_WEB_API.Controllers
         {
             _context = dbContext;
         }
+
+        [HttpPost("/api/v1/addDoctor")]
+        public IActionResult addDoctor(Doctor doctor)
+        {
+            try
+            {
+
+                _context.doctors.Add(doctor);
+                _context.SaveChanges();
+
+                Log.Information($"Doctor Added Successfully");
+                return Ok("Doctor Added Successfully!");
+            }
+            catch (Exception ex)
+            {
+                Log.Error(ex, "An error occurred while adding Doctor!");
+                return StatusCode(500, $"An error occurred: {ex.Message}");
+            }
+        }
+
 
         [HttpGet("/api/v1/getDoctors")]
         public ActionResult<IEnumerable<Doctor>> GetDoctors()

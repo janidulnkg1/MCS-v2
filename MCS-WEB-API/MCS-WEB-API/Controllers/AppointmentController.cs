@@ -17,6 +17,25 @@ namespace MCS_WEB_API.Controllers
             _context = dbcontext;
         }
 
+        [HttpPost("/api/v1/addAppointment")]
+        public IActionResult addAppointment(Appointment appointment)
+        {
+            try
+            {
+
+                _context.appointments.Add(appointment);
+                _context.SaveChanges();
+
+                Log.Information($"Appointment Added Successfully");
+                return Ok("Appointment Added Successfully!");
+            }
+            catch (Exception ex)
+            {
+                Log.Error(ex, "An error occurred while adding Appointment!");
+                return StatusCode(500, $"An error occurred: {ex.Message}");
+            }
+        }
+
         [HttpGet("/api/v1/getAppointments")]
         public ActionResult<IEnumerable<Appointment>> GetAppointments()
         {
