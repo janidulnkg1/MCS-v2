@@ -18,7 +18,7 @@ namespace MCS_WEB_API.Controllers
         }
 
         [HttpGet("/api/v1/getAppointments")]
-        public ActionResult<IEnumerable<Appointment>> GetAppointmentss()
+        public ActionResult<IEnumerable<Appointment>> GetAppointments()
         {
             try
             {
