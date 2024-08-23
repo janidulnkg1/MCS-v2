@@ -25,7 +25,7 @@ namespace MCS_WEB_API.Services
         public string GetMyDesignation()
         {
             var result = string.Empty;
-            var user = _httpContextAccessor.HttpContext?.User; // Null check for HttpContext.User
+            var user = _httpContextAccessor.HttpContext?.User; // Null check for HttpContext.Designation
             if (user != null)
             {
                 result = user.FindFirstValue(ClaimTypes.Role);
